@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "52fd1976-78bd-4bf8-8002-bf355fafe8d2",
+    "name": "TestUsers",
+    "description": "## Endpoints\n\nBase: `/api/user`\n\n| Method | Endpoint | Description |\n| --- | --- | --- |\n| GET | `/api/user` | List Users |\n| POST | `/api/user` | Create User |\n| PUT | `/api/user/{id}` | Update User |\n| DELETE | `/api/user/{id}` | Delete User |",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40436445"
+  },
+  "item": [
+    {
+      "name": "postUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Raul\",\r\n    \"username\": \"Zambu\",\r\n    \"email\": \"zdiaz@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/user",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUsers",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Raul\",\r\n    \"username\": \"Zambu\",\r\n    \"email\": \"zdiaz@gmail.com\",\r\n    \"password\": \"12345\"\r\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/api/user",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "putUser",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Raul Diaz Diaz\",\r\n    \"username\": \"Zambu\",\r\n    \"email\": \"zdiaz@gmail.com\",\r\n    \"password\": \"12345POLOLO\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/user/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Raul Diaz\",\r\n    \"username\": \"Zambu\",\r\n    \"email\": \"zdiaz@gmail.com\",\r\n    \"password\": \"12345POLOLO\"\r\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/api/user/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
