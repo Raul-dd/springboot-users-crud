@@ -114,32 +114,30 @@ Ahí puedes ajustar:
 
 ### 1) Listar usuarios
 ~~~bash
-curl -X GET http://localhost:8080/api/user
+GET http://localhost:8080/api/user
 ~~~
 
 ### 2) Crear usuario
 ~~~bash
-curl -X POST http://localhost:8080/api/user \
-  -H "Content-Type: application/json" \
-  -d '{
+POST http://localhost:8080/api/user 
+  {
     "name": "Raul",
     "email": "raul@gmail.com"
-  }'
+  }
 ~~~
 
 ### 3) Actualizar usuario
 ~~~bash
-curl -X PUT http://localhost:8080/api/user/1 \
-  -H "Content-Type: application/json" \
-  -d '{
+ PUT http://localhost:8080/api/user/1 
+  {
     "name": "Raul Actualizado",
     "email": "raul.updated@gmail.com"
-  }'
+  }
 ~~~
 
 ### 4) Eliminar usuario
 ~~~bash
-curl -X DELETE http://localhost:8080/api/user/1
+DELETE http://localhost:8080/api/user/1
 ~~~
 
 ---
