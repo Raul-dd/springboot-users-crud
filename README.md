@@ -2,8 +2,6 @@
 
 CRUD simple de usuarios construido con **Spring Boot** como API REST, aplicando buenas prácticas: **Controller → Service → Repository**, uso de **DTO + Mapper** y manejo de errores con **Exceptions**.
 
-> Proyecto ideal para portafolio: fácil de clonar, ejecutar y probar con Postman.
-
 ---
 
 ## 🚀 Funcionalidades
